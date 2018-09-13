@@ -10,8 +10,8 @@
 		42386ABE2148670E004A0B8F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42386ABD2148670E004A0B8F /* DetailViewController.swift */; };
 		42386AC021486B03004A0B8F /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42386ABF21486B03004A0B8F /* Episode.swift */; };
 		42386AC22149E281004A0B8F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42386AC12149E281004A0B8F /* MasterViewController.swift */; };
+		42386AC42149E53E004A0B8F /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42386AC32149E53E004A0B8F /* Downloader.swift */; };
 		4259C092214236970070CDB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4259C091214236970070CDB2 /* AppDelegate.swift */; };
-		4259C094214236970070CDB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4259C093214236970070CDB2 /* ViewController.swift */; };
 		4259C097214236970070CDB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4259C095214236970070CDB2 /* Main.storyboard */; };
 		4259C0992142369A0070CDB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4259C0982142369A0070CDB2 /* Assets.xcassets */; };
 		4259C09C2142369A0070CDB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4259C09A2142369A0070CDB2 /* LaunchScreen.storyboard */; };
@@ -21,9 +21,9 @@
 		42386ABD2148670E004A0B8F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		42386ABF21486B03004A0B8F /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		42386AC12149E281004A0B8F /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		42386AC32149E53E004A0B8F /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 		4259C08E214236970070CDB2 /* Assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4259C091214236970070CDB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4259C093214236970070CDB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4259C096214236970070CDB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4259C0982142369A0070CDB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4259C09B2142369A0070CDB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,13 +62,13 @@
 			children = (
 				4259C091214236970070CDB2 /* AppDelegate.swift */,
 				42386AC12149E281004A0B8F /* MasterViewController.swift */,
-				4259C093214236970070CDB2 /* ViewController.swift */,
 				42386ABD2148670E004A0B8F /* DetailViewController.swift */,
 				4259C095214236970070CDB2 /* Main.storyboard */,
 				4259C0982142369A0070CDB2 /* Assets.xcassets */,
 				4259C09A2142369A0070CDB2 /* LaunchScreen.storyboard */,
 				4259C09D2142369A0070CDB2 /* Info.plist */,
 				42386ABF21486B03004A0B8F /* Episode.swift */,
+				42386AC32149E53E004A0B8F /* Downloader.swift */,
 			);
 			path = Assignment1;
 			sourceTree = "<group>";
@@ -146,8 +146,8 @@
 			files = (
 				42386AC22149E281004A0B8F /* MasterViewController.swift in Sources */,
 				42386AC021486B03004A0B8F /* Episode.swift in Sources */,
+				42386AC42149E53E004A0B8F /* Downloader.swift in Sources */,
 				42386ABE2148670E004A0B8F /* DetailViewController.swift in Sources */,
-				4259C094214236970070CDB2 /* ViewController.swift in Sources */,
 				4259C092214236970070CDB2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
