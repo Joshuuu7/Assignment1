@@ -67,8 +67,8 @@
 				4259C0982142369A0070CDB2 /* Assets.xcassets */,
 				4259C09A2142369A0070CDB2 /* LaunchScreen.storyboard */,
 				4259C09D2142369A0070CDB2 /* Info.plist */,
-				42386ABF21486B03004A0B8F /* Episode.swift */,
 				42386AC32149E53E004A0B8F /* Downloader.swift */,
+				42386ABF21486B03004A0B8F /* Episode.swift */,
 			);
 			path = Assignment1;
 			sourceTree = "<group>";
