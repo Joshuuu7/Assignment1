@@ -67,7 +67,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="RJk-Gv-e0w" kind="relationship" relationship="rootViewController" id="5F4-6K-HBu"/>
+                        <segue destination="RJk-Gv-e0w" kind="relationship" relationship="rootViewController" id="Y3z-oa-Dfw"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6LE-fj-Rf7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -79,8 +79,8 @@
             <objects>
                 <splitViewController id="Vhy-or-2Dm" sceneMemberID="viewController">
                     <connections>
-                        <segue destination="sF0-WA-gz8" kind="relationship" relationship="masterViewController" id="nHS-6v-lBv"/>
                         <segue destination="uXM-oi-MrO" kind="relationship" relationship="detailViewController" id="naf-jz-iS4"/>
+                        <segue destination="sF0-WA-gz8" kind="relationship" relationship="masterViewController" id="CRC-x2-rAZ"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nwx-Bq-uP6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -106,7 +106,7 @@
         <!--Detail-->
         <scene sceneID="bzZ-cT-VGd">
             <objects>
-                <viewController title="Detail" id="Rw7-0s-WHY" customClass="DetailViewController" sceneMemberID="viewController">
+                <viewController title="Detail" id="Rw7-0s-WHY" customClass="DetailViewController" customModule="Assignment1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lwB-IA-dLG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,7 +145,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Episode Summary" id="Bqw-ey-Kvm"/>
                     <connections>
-                        <outlet property="airDateLabel" destination="vwn-Hl-KzA" id="ICD-js-bxd"/>
+                        <outlet property="airDateLabel" destination="vwn-Hl-KzA" id="RDy-Q9-DqF"/>
                         <outlet property="imageView" destination="lgs-xM-MtC" id="htG-v6-3jz"/>
                         <outlet property="summaryWebView" destination="pFF-mo-IAo" id="xYv-Ca-l84"/>
                         <outlet property="titleLabel" destination="l7L-0V-1wX" id="RuL-2E-JLb"/>
