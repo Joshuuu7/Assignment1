@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Songs-->
+        <!--Master-->
         <scene sceneID="7Py-0D-y8x">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="RJk-Gv-e0w" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Master" title="Master" clearsSelectionOnViewWillAppear="NO" id="RJk-Gv-e0w" customClass="MasterViewController" customModule="Assignment1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2pT-7k-7Th">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -106,7 +106,7 @@
         <!--Detail-->
         <scene sceneID="bzZ-cT-VGd">
             <objects>
-                <viewController title="Detail" id="Rw7-0s-WHY" sceneMemberID="viewController">
+                <viewController title="Detail" id="Rw7-0s-WHY" customClass="DetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lwB-IA-dLG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,6 +131,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="naf-jz-iS4"/>
+        <segue reference="mOk-po-t3q"/>
     </inferredMetricsTieBreakers>
 </document>
