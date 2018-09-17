@@ -43,7 +43,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="uXM-oi-MrO" kind="showDetail" id="h9f-iy-G7R"/>
+                                    <segue destination="uXM-oi-MrO" kind="showDetail" identifier="showDetail" id="h9f-iy-G7R"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -148,7 +148,7 @@
                         <outlet property="airDateLabel" destination="vwn-Hl-KzA" id="RDy-Q9-DqF"/>
                         <outlet property="imageView" destination="lgs-xM-MtC" id="htG-v6-3jz"/>
                         <outlet property="summaryWebView" destination="pFF-mo-IAo" id="xYv-Ca-l84"/>
-                        <outlet property="titleLabel" destination="l7L-0V-1wX" id="RuL-2E-JLb"/>
+                        <outlet property="titleLabel" destination="l7L-0V-1wX" id="mJh-AX-LGq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sLG-ei-cDe" userLabel="First Responder" sceneMemberID="firstResponder"/>
