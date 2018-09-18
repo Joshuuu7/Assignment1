@@ -111,28 +111,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Episode Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7L-0V-1wX" userLabel="Title Label">
-                                <rect key="frame" x="133" y="118" width="112" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode Title" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7L-0V-1wX" userLabel="Title Label">
+                                <rect key="frame" x="16" y="84" width="343" height="22"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="20"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Air Date " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwn-Hl-KzA" userLabel="Air Date Label">
-                                <rect key="frame" x="166" y="148" width="66" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Air Date " textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwn-Hl-KzA" userLabel="Air Date Label">
+                                <rect key="frame" x="16" y="126" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lgs-xM-MtC">
-                                <rect key="frame" x="67" y="224" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lgs-xM-MtC">
+                                <rect key="frame" x="67" y="167" width="240" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="d8V-MV-Mq4"/>
+                                    <constraint firstAttribute="width" constant="240" id="jJl-lx-6F5"/>
+                                </constraints>
                             </imageView>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pFF-mo-IAo">
-                                <rect key="frame" x="16" y="360" width="343" height="287"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pFF-mo-IAo">
+                                <rect key="frame" x="20" y="337" width="335" height="310"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -141,6 +141,21 @@
                             </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JRA-f7-pLj" firstAttribute="bottom" secondItem="pFF-mo-IAo" secondAttribute="bottom" constant="20" id="4YV-yf-2cN"/>
+                            <constraint firstItem="pFF-mo-IAo" firstAttribute="top" secondItem="lgs-xM-MtC" secondAttribute="bottom" constant="20" id="5TW-hG-z0S"/>
+                            <constraint firstItem="vwn-Hl-KzA" firstAttribute="leading" secondItem="JRA-f7-pLj" secondAttribute="leading" constant="16" id="6Sq-Z7-JO8"/>
+                            <constraint firstItem="JRA-f7-pLj" firstAttribute="trailing" secondItem="vwn-Hl-KzA" secondAttribute="trailing" constant="16" id="7dx-jQ-g5B"/>
+                            <constraint firstItem="lgs-xM-MtC" firstAttribute="top" secondItem="vwn-Hl-KzA" secondAttribute="bottom" constant="20" id="B7V-2l-gXM"/>
+                            <constraint firstItem="pFF-mo-IAo" firstAttribute="top" secondItem="lgs-xM-MtC" secondAttribute="bottom" constant="20" id="EcY-vB-428"/>
+                            <constraint firstItem="l7L-0V-1wX" firstAttribute="top" secondItem="JRA-f7-pLj" secondAttribute="top" constant="20" id="Rir-Tc-IxX"/>
+                            <constraint firstItem="pFF-mo-IAo" firstAttribute="leading" secondItem="JRA-f7-pLj" secondAttribute="leading" constant="20" id="UTM-ko-Aya"/>
+                            <constraint firstItem="JRA-f7-pLj" firstAttribute="trailing" secondItem="l7L-0V-1wX" secondAttribute="trailing" constant="16" id="cgk-8z-dqH"/>
+                            <constraint firstItem="lgs-xM-MtC" firstAttribute="centerX" secondItem="lwB-IA-dLG" secondAttribute="centerX" id="dpp-Ge-pBY"/>
+                            <constraint firstItem="JRA-f7-pLj" firstAttribute="trailing" secondItem="pFF-mo-IAo" secondAttribute="trailing" constant="20" id="fPe-Xc-Xmf"/>
+                            <constraint firstItem="vwn-Hl-KzA" firstAttribute="top" secondItem="l7L-0V-1wX" secondAttribute="bottom" constant="20" id="gmL-BJ-1YE"/>
+                            <constraint firstItem="l7L-0V-1wX" firstAttribute="leading" secondItem="JRA-f7-pLj" secondAttribute="leading" constant="16" id="qfz-F1-Jvg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="JRA-f7-pLj"/>
                     </view>
                     <navigationItem key="navigationItem" title="Episode Summary" id="Bqw-ey-Kvm"/>
