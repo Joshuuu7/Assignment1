@@ -90,7 +90,7 @@ class MasterViewController: UITableViewController {
         
         weak var weakSelf = self
         
-        downloader.downloadData(urlString: "http://api.tvmaze.com/singlesearch/shows?q=mr-robot&embed=episodes") {
+        downloader.downloadData(urlString: "http://api.tvmaze.com/singlesearch/shows?q=black-mirror&embed=episodes") {
             (data) in
             
             guard let jsonData = data else {
