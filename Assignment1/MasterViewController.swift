@@ -84,21 +84,6 @@ class MasterViewController: UITableViewController {
         return cell
     }
     
-    // Configure table cell
-    func configure(cell: UITableViewCell, for indexPath: IndexPath) {
-        
-        guard let cell = cell as? EpisodeCell else {
-            return
-        }
-        let object = episodeObjects[indexPath.row]
-        //let episode = EpisodeCell?.object(at: indexPath)
-        
-        //cell.logoImageView.image = UIImage(cgImage: EpisodeImage.medium.image)
-        cell.titleLabel.text = object.name
-        cell.subtitleLabel.text = object.airdate
-    }
-
-    
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
