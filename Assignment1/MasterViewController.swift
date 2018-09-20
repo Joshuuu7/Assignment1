@@ -11,8 +11,9 @@ import UIKit
 class MasterViewController: UITableViewController {
     
     var detailViewController: DetailViewController? = nil
-    var objects = [Episode]()
+    var episodeObjects = [Episode]()
     var downloader = Downloader()
+    var image: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +43,7 @@ class MasterViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
-                let object = objects[indexPath.row]
+                let object = episodeObjects[indexPath.row]
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
                 controller.detailItem = object
                 controller.downloader = downloader
@@ -59,17 +60,44 @@ class MasterViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return objects.count
+        return episodeObjects.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! EpisodeCell
+    
+        /// Create instance of "President" type.
+        let episodeObject : Episode
         
-        let object = objects[indexPath.row]
-        cell.textLabel!.text = object.name
-        cell.detailTextLabel!.text = object.airdate
+        episodeObject = episodeObjects[indexPath.row]
+        
+        
+        downloader.downloadImage(urlString: episodeObject.image.medium) {
+            (image: UIImage?) in
+            cell.logoImageView!.image = image
+            
+        }
+        
+        cell.titleLabel!.text = episodeObject.name
+        cell.subtitleLabel!.text = episodeObject.airdate
+        
         return cell
     }
+    
+    // Configure table cell
+    func configure(cell: UITableViewCell, for indexPath: IndexPath) {
+        
+        guard let cell = cell as? EpisodeCell else {
+            return
+        }
+        let object = episodeObjects[indexPath.row]
+        //let episode = EpisodeCell?.object(at: indexPath)
+        
+        //cell.logoImageView.image = UIImage(cgImage: EpisodeImage.medium.image)
+        cell.titleLabel.text = object.name
+        cell.subtitleLabel.text = object.airdate
+    }
+
     
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
@@ -78,7 +106,7 @@ class MasterViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            objects.remove(at: indexPath.row)
+            episodeObjects.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
@@ -100,7 +128,7 @@ class MasterViewController: UITableViewController {
             
             do {
                 let showData = try JSONDecoder().decode(ShowData.self, from: jsonData)
-                weakSelf!.objects = showData.embedded.episodes
+                weakSelf!.episodeObjects = showData.embedded.episodes
                 weakSelf!.tableView.reloadData()
             } catch {
                 weakSelf!.presentAlert(title: "Error", message: "Invalid JSON downloaded")
@@ -115,4 +143,5 @@ class MasterViewController: UITableViewController {
         
         present(alertController, animated: true, completion: nil)
     }
+    
 }

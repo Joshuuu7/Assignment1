@@ -15,6 +15,7 @@
 		4259C097214236970070CDB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4259C095214236970070CDB2 /* Main.storyboard */; };
 		4259C0992142369A0070CDB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4259C0982142369A0070CDB2 /* Assets.xcassets */; };
 		4259C09C2142369A0070CDB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4259C09A2142369A0070CDB2 /* LaunchScreen.storyboard */; };
+		4292994721541F9900D8D9EB /* EpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4292994621541F9900D8D9EB /* EpisodeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4259C0982142369A0070CDB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4259C09B2142369A0070CDB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4259C09D2142369A0070CDB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4292994621541F9900D8D9EB /* EpisodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				4259C091214236970070CDB2 /* AppDelegate.swift */,
+				4292994621541F9900D8D9EB /* EpisodeCell.swift */,
 				42386AC12149E281004A0B8F /* MasterViewController.swift */,
 				42386ABD2148670E004A0B8F /* DetailViewController.swift */,
 				4259C095214236970070CDB2 /* Main.storyboard */,
@@ -149,6 +152,7 @@
 				42386AC42149E53E004A0B8F /* Downloader.swift in Sources */,
 				42386ABE2148670E004A0B8F /* DetailViewController.swift in Sources */,
 				4259C092214236970070CDB2 /* AppDelegate.swift in Sources */,
+				4292994721541F9900D8D9EB /* EpisodeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
