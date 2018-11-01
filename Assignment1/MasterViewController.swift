@@ -66,7 +66,7 @@ class MasterViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! EpisodeCell
     
-        /// Create instance of "President" type.
+        /// Create instance of "Episode" type.
         let episodeObject : Episode
         
         episodeObject = episodeObjects[indexPath.row]
